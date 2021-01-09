@@ -1,0 +1,152 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Spartan;
+    font-size: 15px;
+    background-image: url("images/bg-pattern-top-mobile.svg"), url("images/bg-pattern-bottom-mobile.svg");
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+}
+
+.mainContainer{
+    margin: 20px 10px 20px 10px;
+}
+
+.headerContainer{
+    text-align: center;
+}
+
+.h1Header{
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+
+.smallText{
+    font-weight: 400;
+    color: hsl(303, 10%, 53%);
+}
+
+.allReviewsContainer{
+    height: 170px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.reviewContainer{
+    height: 50px;
+    background-color: hsl(300, 24%, 96%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.imgContainer{
+    height: 16px;
+    width: 101px;
+    background-image: url("images/icon-star.svg");
+    background-repeat: space;
+    margin-top: 5px;
+}
+
+.reviewP{
+    color: hsl(300, 43%, 22%);
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.allCommentContainer{
+    margin-top: 20px;
+}
+
+.commentContainer{
+    height: 215px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.buyerContainer{
+    display: flex;
+    align-items: center;
+
+}
+
+img{
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.buyerC1{
+    color: hsl(0, 0%, 100%);
+}
+
+.buyerC2{
+    color: hsl(333, 80%, 67%);
+}
+
+.commentP{
+    color: hsl(0, 0%, 85%);
+    font-weight: 400;
+    margin: 10px;
+}
+
+
+@media (min-width: 376px){
+    body{
+        background-image: none;
+    }
+
+    .mainContainer{
+        margin: 100px 70px 0 70px;
+        padding: 40px 80px 40px 80px;
+        /*border: 1px black solid;*/
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-image: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
+        background-position: top left, bottom right;
+        background-repeat: no-repeat;
+        box-shadow: 5px 5px 10px hsl(303, 10%, 53%);
+    }
+
+    .headerContainer{
+        text-align: left;
+        font-size: 1.1rem;
+        max-width: 360px;
+    }
+
+    .allReviewsContainer{
+        width: 500px;
+    }
+
+    .allCommentContainer{
+        grid-column: 1 / -1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 280px;
+    }
+
+    .commentContainer{
+        max-width: 320px;
+    }
+
+    .item1{
+        align-self: flex-start;
+    }
+    .item2{
+        align-self: center;
+    }
+    .item3{
+        align-self: flex-end;
+    }
+
+}
+
