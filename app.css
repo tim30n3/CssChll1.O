@@ -99,7 +99,7 @@ img{
 }
 
 
-@media (min-width: 376px){
+@media (min-width: 376px) {
     body{
         background-image: none;
     }
@@ -107,9 +107,8 @@ img{
     .mainContainer{
         margin: 100px 70px 0 70px;
         padding: 40px 80px 40px 80px;
-        /*border: 1px black solid;*/
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 3.2fr;
         background-image: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
         background-position: top left, bottom right;
         background-repeat: no-repeat;
@@ -120,10 +119,40 @@ img{
         text-align: left;
         font-size: 1.1rem;
         max-width: 360px;
+        max-height: 180px;
     }
 
     .allReviewsContainer{
-        width: 500px;
+        max-width: 500px;
+    }
+
+    .allCommentContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 280px;
+    }
+
+    .commentContainer{
+        max-width: 320px;
+    }
+
+    .item1{
+        align-self: flex-start;
+    }
+    .item2{
+        align-self: center;
+    }
+    .item3{
+        align-self: flex-end;
+    }
+}
+
+@media (min-width: 890px){
+
+    .mainContainer{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: none;
     }
 
     .allCommentContainer{
@@ -149,4 +178,3 @@ img{
     }
 
 }
-
