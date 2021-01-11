@@ -33,7 +33,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../www.lms.tsu.ge" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -58,11 +58,24 @@
       <workItem from="1610201648566" duration="2074000" />
       <workItem from="1610211608067" duration="8718000" />
       <workItem from="1610221374230" duration="215000" />
-      <workItem from="1610283346205" duration="2228000" />
+      <workItem from="1610283346205" duration="2954000" />
+      <workItem from="1610393272903" duration="1044000" />
     </task>
+    <task id="LOCAL-00001" summary="update 1.0">
+      <created>1610285690217</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610285690217</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 1.0" />
   </component>
 </project>

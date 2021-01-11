@@ -6,7 +6,7 @@
 }
 
 body{
-    font-family: Spartan;
+    font-family: Spartan, serif;
     font-size: 15px;
     background-image: url("images/bg-pattern-top-mobile.svg"), url("images/bg-pattern-bottom-mobile.svg");
     background-position: top left, bottom right;
@@ -67,10 +67,11 @@ body{
 }
 
 .commentContainer{
-    height: 215px;
+    height: auto;
     background-color: hsl(300, 43%, 22%);
     border-radius: 5px;
     margin-top: 10px;
+    padding: 10px 10px 20px 10px;
 }
 
 .buyerContainer{
@@ -95,11 +96,11 @@ img{
 .commentP{
     color: hsl(0, 0%, 85%);
     font-weight: 400;
-    margin: 10px;
 }
 
 
-@media (min-width: 376px) {
+@media (min-width: 800px){
+
     body{
         background-image: none;
     }
@@ -108,7 +109,7 @@ img{
         margin: 100px 70px 0 70px;
         padding: 40px 80px 40px 80px;
         display: grid;
-        grid-template-rows: 1fr 1fr 3.2fr;
+        grid-template-columns: 1fr 1fr;
         background-image: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
         background-position: top left, bottom right;
         background-repeat: no-repeat;
@@ -124,35 +125,6 @@ img{
 
     .allReviewsContainer{
         max-width: 500px;
-    }
-
-    .allCommentContainer{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 280px;
-    }
-
-    .commentContainer{
-        max-width: 320px;
-    }
-
-    .item1{
-        align-self: flex-start;
-    }
-    .item2{
-        align-self: center;
-    }
-    .item3{
-        align-self: flex-end;
-    }
-}
-
-@media (min-width: 890px){
-
-    .mainContainer{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: none;
     }
 
     .allCommentContainer{
